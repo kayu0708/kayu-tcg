@@ -20,6 +20,8 @@ header {
   font-weight: 600;
   color: var(--color-text);
   text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
 }
 
 /* Logo image */
@@ -32,6 +34,10 @@ header {
 /* Active state */
 .logo-link.active {
   color: var(--color-primary);
+}
+
+.logo-link:hover {
+  background-color: var(--color-border);
 }
 
 /* Right side nav */
