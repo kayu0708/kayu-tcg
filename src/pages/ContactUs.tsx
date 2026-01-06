@@ -1,7 +1,3 @@
 export function ContactUs() {
-  return (
-    <>
-      <p>Contact Us</p>
-    </>
-  );
+  return <h1>Contact Us</h1>;
 }

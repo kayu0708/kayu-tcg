@@ -1,11 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function AppHeader() {
-  const navigate = useNavigate();
   return (
     <header>
-      <button onClick={() => navigate("/")}>Main</button>
-      <button onClick={() => navigate("/contactus")}>Contact</button>
+      <NavLink to="/">Main</NavLink>
+      <NavLink to="/contactus">Contact</NavLink>
     </header>
   );
 }
