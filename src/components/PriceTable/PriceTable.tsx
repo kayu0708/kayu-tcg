@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { PriceItem } from "../../types/priceList";
 import "./PriceTable.css";
 
@@ -6,16 +7,18 @@ type Props = {
 };
 
 export function PriceTable({ items }: Props) {
+  const { t } = useTranslation();
+
   return (
     <table className="price-table">
       <thead>
         <tr>
           <th>Product</th>
           <th>Code</th>
-          <th>Shrinked</th>
-          <th>Unshrinked</th>
-          <th>No Box</th>
-          <th>Loose Pack</th>
+          <th>{t("shrinked")}</th>
+          <th>{t("unshrinked")}</th>
+          <th>{t("noBox")}</th>
+          <th>{t("loosePack")}</th>
         </tr>
       </thead>
       <tbody>
@@ -28,28 +31,28 @@ export function PriceTable({ items }: Props) {
             <td>
               <div className="price-cell">
                 <span className="price-value">{item.shrinked}</span>
-                <span className="price-desc">(Shrinked)</span>
+                <span className="price-desc">({t("shrinked")})</span>
               </div>
             </td>
 
             <td>
               <div className="price-cell">
                 <span className="price-value">{item.unshrinked}</span>
-                <span className="price-desc">(Unshrinked)</span>
+                <span className="price-desc">({t("unshrinked")})</span>
               </div>
             </td>
 
             <td>
               <div className="price-cell">
                 <span className="price-value">{item.noBox}</span>
-                <span className="price-desc">(No Box)</span>
+                <span className="price-desc">({t("noBox")})</span>
               </div>
             </td>
 
             <td>
               <div className="price-cell">
                 <span className="price-value">{item.loosePack}</span>
-                <span className="price-desc">(Loose Pack)</span>
+                <span className="price-desc">({t("loosePack")})</span>
               </div>
             </td>
           </tr>
