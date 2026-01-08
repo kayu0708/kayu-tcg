@@ -18,9 +18,6 @@ export function AppHeader() {
         </NavLink>
       </nav>
 
-      {/* <nav className="nav-right">
-        <NavLink to="/contactus">Contact Us</NavLink>
-      </nav> */}
       <div className="nav-right">
         <button onClick={() => i18n.changeLanguage("en")}>EN</button>
         <span style={{ margin: "0 6px" }}>|</span>
