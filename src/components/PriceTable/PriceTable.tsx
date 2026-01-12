@@ -33,28 +33,34 @@ export function PriceTable({ items }: Props) {
             <td data-label={t("shrinked")}>
               <div className="price-cell">
                 <span className="price-value">{item.shrinked}</span>
-                <span className="price-desc">({t("shrinked")})</span>
+                <span className="price-desc">
+                  {item.shrinked == "-" ? "" : `(${t("shrinked")})`}
+                </span>
               </div>
             </td>
 
             <td data-label={t("unshrinked")}>
               <div className="price-cell">
                 <span className="price-value">{item.unshrinked}</span>
-                <span className="price-desc">({t("unshrinked")})</span>
+                <span className="price-desc">
+                  {item.unshrinked == "-" ? "" : `(${t("unshrinked")})`}
+                </span>
               </div>
             </td>
 
             <td data-label={t("noBox")}>
               <div className="price-cell">
                 <span className="price-value">{item.noBox}</span>
-                <span className="price-desc">({t("noBox")})</span>
+                <span className="price-desc">
+                  {item.noBox == "-" ? "" : `(${t("noBox")})`}
+                </span>
               </div>
             </td>
 
             <td data-label={t("loosePack")}>
               <div className="price-cell">
                 <span className="price-value">{item.loosePack}</span>
-                 <span className="price-desc">
+                <span className="price-desc">
                   {item.loosePack == "-" ? "" : `(${t("loosePack")})`}
                 </span>
               </div>

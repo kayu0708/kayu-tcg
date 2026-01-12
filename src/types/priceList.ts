@@ -22,8 +22,8 @@ export type SheetResponse = {
 export type PriceItem = {
   imageUrl: string;
   code: string;
-  shrinked?: number;
-  unshrinked?: number;
-  noBox?: number;
+  shrinked?: string;
+  unshrinked?: string;
+  noBox?: string;
   loosePack?: string;
 };
