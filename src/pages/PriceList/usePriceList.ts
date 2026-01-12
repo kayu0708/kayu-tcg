@@ -14,9 +14,9 @@ function mapRowsToPriceItems(response: SheetResponse): PriceItem[] {
     return {
       imageUrl: String(c[1]?.v ?? ""),
       code: String(c[2]?.v ?? ""),
-      shrinked: Number(c[3]?.v ?? 0),
-      unshrinked: Number(c[4]?.v ?? 0),
-      noBox: Number(c[5]?.v ?? 0),
+      shrinked: String(c[3]?.v ?? "-"),
+      unshrinked: String(c[4]?.v ?? "-"),
+      noBox: String(c[5]?.v ?? "-"),
       loosePack: String(c[6]?.v ?? "-"),
     };
   });
