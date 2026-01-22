@@ -15,11 +15,11 @@ export function AppFooter() {
         <li>
           <FaInstagram className="footer-icon instagram" />
           <a
-            href="https://instagram.com/kaiiyuan98"
+            href="https://instagram.com/kayu_tcg"
             target="_blank"
             rel="noopener noreferrer"
           >
-            kaiiyuan98
+            Kayu TCG
           </a>
         </li>
 
