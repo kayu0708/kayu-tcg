@@ -7,12 +7,83 @@
   color: #4b5563;
 }
 
+/* ===== NEW: Header layout ===== */
+.price-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Keep h1 spacing correct inside header */
+.price-list-header h1 {
+  margin-bottom: 0;
+}
+
+/* ===== NEW: Place Order action ===== */
+.place-order {
+  cursor: pointer;
+  color: #2563eb; /* Tailwind blue-600 vibe */
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.place-order:hover {
+  text-decoration: underline;
+}
+
+/* ===== NEW: Modal styles ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 360px;
+  width: calc(100% - 32px);
+  text-align: center;
+  position: relative;
+}
+
+.modal-content p {
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.qr-image {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  display: "block";
+}
+
 @media (max-width: 640px) {
   .price-list-page h1 {
     font-size: 1.25rem;
   }
 
   .price-list-page p {
+    font-size: 0.9rem;
+  }
+
+  .place-order {
     font-size: 0.9rem;
   }
 }

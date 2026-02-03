@@ -56,7 +56,7 @@ export function AppFooter() {
       <div className="footer-divider" />
 
       <p className="footer-copyright">
-        © 2026 Kai Yuan. All rights reserved.
+        © 2026 Kayu TCG. All rights reserved.
       </p>
     </footer>
   );

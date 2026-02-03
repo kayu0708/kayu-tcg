@@ -5,5 +5,8 @@
   "shrinked": "Shrinked",
   "unshrinked": "Unshrinked",
   "noBox": "No Box",
-  "loosePack": "Loose Pack"
+  "loosePack": "Loose Pack",
+  "placeOrder": "Place Order",
+  "qrTitle": "Place Order",
+  "qrDescription": "Scan or click the QR code to join the group \n or contact us via any channel for more details"
 }
